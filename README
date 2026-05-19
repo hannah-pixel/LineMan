@@ -44,4 +44,9 @@ Sequencing_analysis.ipynb: gets graphs across different metrics to analyze going
 You should first run the merge datasets code in order to get to the clean/merged datasets, before running any subsequent files. In addition, running the metrics code before doing any further analysis
 is recommended, since it helps to get relevant metrics to each incentive. Once you run the merge_datasets and progress_metrics files, you can run any other code and it should be good.
 
+The data can be split into 2 types
+- order level data: (./orderlevel_updated)
+- week level data: (./mainexperiment)
+  - this includes pos (market) data as well
+
 ## If there are any questions, can read additional documentation/results in the LineMan google doc/folder.
