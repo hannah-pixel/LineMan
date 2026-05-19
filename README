@@ -1,6 +1,6 @@
-###LineMan Code###
+#LineMan Code 
 
-Here is all of the code for the LineMan project (Spring 2026). The description of each folder is as follows: 
+## Here is all of the code for the LineMan project (Spring 2026). The description of each folder is as follows: 
 
 30_cities_statistics: To get baseline statistics for the initial 30 regions the experiment was ran on 
 Bkk_region_matching: initial bangkok code for matching data in order to verify results from 30 cities 
@@ -36,6 +36,7 @@ Sequencing_analysis.ipynb: gets graphs across different metrics to analyze going
 Ttest.ipynb: gets some ttest metrics for the same sequencing analysis of going from one experiment to the next 
 W1_and_w2: focused on only week 1 and week2 as an introduction to analyzing the sequencing of incentives from one to the next
 
-The initial raw data can be found in the data folder Subsequent analyzed data/graphs can be done by running the relevant code (I was not able to push all of the data that 
+## The initial raw data can be found in the data folder Subsequent analyzed data/graphs can be done by running the relevant code (I was not able to push all of the data that 
                                                                                                                             from my results due to size limitations).
 
+## If there are any questions, can read additional documentation/results in the LineMan google doc/folder.
