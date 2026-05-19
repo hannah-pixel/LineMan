@@ -1,42 +1,48 @@
 #LineMan Code 
 
-## Here is all of the code for the LineMan project (Spring 2026). The description of each folder is as follows: 
+## Here is all of the code for the LineMan project (Spring 2026). 
+
+Research Question: We tackled many different research questions throughout the semester. Some of the research questions we focused on includes: 
+What incentive sequencing performs the best? For example, does Daily Orders perform better after Streak Orders, or another type of incentive? 
+Is there a novelty shock to the introduction of an incentive? How do drivers react to the initial introduction of an incentive, and how does this affect their performance?
+
+Background: An experiment was conducted in Thailand where, LineMan, a food delivery platform executed 4 different incentives over the course of 6 weeks across 30 different regions in Thailand. Each week, a region was given different incentives, with different goals to reach depending on the driver tier. Drivers could be classified into 3 different tiers, top, mid, and bottom. In addition, the different incentives could be classified into 2 different groupings, Streak based or Daily based, as well as Hours based or Orders based. Hour-based incentives required a minimum amount of hours online in order to get the reward, while order-based incentive required a minimum amount of orders completed to receive the reward. In addition, streak based incentives required different goals to be met across the entire week, while daily based goals required the threshold to be met on an individual basis. In addition, each region could be classified into 3 different subgroups: Win, Swing, Lose, which denotes if this delivery app (LineMan) is the leading delivery app in the region, aka the most used.
+
+
+The description of each folder is as follows: 
 
 30_cities_statistics: To get baseline statistics for the initial 30 regions the experiment was ran on 
 Bkk_region_matching: initial bangkok code for matching data in order to verify results from 30 cities 
-Bkk_incentives.ipynb: get which incentives were used in each bangkok region for the timeframe
-Region_matching.ipynb: get which regions from the 30 cities matches each region in bangkok the best (to verify 30 cities findings)
+  Bkk_incentives.ipynb: get which incentives were used in each bangkok region for the timeframe
+  Region_matching.ipynb: get which regions from the 30 cities matches each region in bangkok the best (to verify 30 cities findings)
 Driver_reactions: analyze driver reactions to getting the initial incentive 
-Goal: to analyze the effect of number of orders needed to be completed on productivity of the driver 
-Shock_factor: analyze if there was a shock factor to receiving the incentive, and the result this had on their productivity throughout the week
+  Goal: to analyze the effect of number of orders needed to be completed on productivity of the driver 
+  Shock_factor: analyze if there was a shock factor to receiving the incentive, and the result this had on their productivity throughout the week
 Exploratory analysis: to get used to the data, and understand how each dataset is framed 
 Incentives: empty…
 Merge_datasets: merging weather and driver level to each dataset 
-Merge_rider_level.ipynb: merging driver level to each dataset
-Merge_weather.ipynb: merging weather to each dataset 
+  Merge_rider_level.ipynb: merging driver level to each dataset
+  Merge_weather.ipynb: merging weather to each dataset 
 Preliminary_insights: get graphs that track progress towards incentives across the 6 weeks of the experiment (also split by driver tier) 
 Progress_metrics: getting metrics that are relevant to each incentive type and tracking their progress towards reaching the goal for each corresponding incentive 
-Active_hour: gets relevant metrics for active_hour 
-Most relevant columns: time_worked_in_window_sec, daily_cumulative_time_sec, days_worked_list, days_worked_count, has_required_days
-Daily_guarantee: gets relevant metrics for daily_guarantee
-Used metrics from this dataset for most of the analysis 
-Most relevant columns: time_per_order_sec, time_worked_sec, daily_cumulative_time_sec, time_worked_in_window_sec, window_cumulative_sec
-Daily_productivity: gets relevant metrics for daily_productivity
-Most relevant columns: daily_order_count
-Streak: gets relevant metrics for streak 
-Most relevant columns: orders_target1_cumulative, orders_target2_cumulative, orders_target3_cumulative, worked_target1_days, worked_target2_days, worked_target3_days
-Measure_progress.ipynb: gets the progress made towards each incentive’s goal
-Merge_incentives.ipynb: matches the corresponding incentive for that region/week
+  Active_hour: gets relevant metrics for active_hour 
+  Daily_guarantee: gets relevant metrics for daily_guarantee
+  Daily_productivity: gets relevant metrics for daily_productivity
+  Streak: gets relevant metrics for streak 
+  Measure_progress.ipynb: gets the progress made towards each incentive’s goal
+  Merge_incentives.ipynb: matches the corresponding incentive for that region/week
 Regressions: ran some regressions in order to get some insights from the data
-Day_level_regressions.ipynb: ran regressions at the day level to get some day level insights/changes 
-Week_level_regressions.ipynb: ran regressions at the week level to get some week level insights/changes
+  Day_level_regressions.ipynb: ran regressions at the day level to get some day level insights/changes 
+  Week_level_regressions.ipynb: ran regressions at the week level to get some week level insights/changes
 Sequencing_analysis
-Full_analysis: analysis on the different sequences of incentives (from one incentive to the next) across the entire experiment 
+  Full_analysis: analysis on the different sequences of incentives (from one incentive to the next) across the entire experiment 
 Sequencing_analysis.ipynb: gets graphs across different metrics to analyze going from one incentive to the next, regardless of the week of the experiment that it is
-Ttest.ipynb: gets some ttest metrics for the same sequencing analysis of going from one experiment to the next 
-W1_and_w2: focused on only week 1 and week2 as an introduction to analyzing the sequencing of incentives from one to the next
+  Ttest.ipynb: gets some ttest metrics for the same sequencing analysis of going from one experiment to the next 
+  W1_and_w2: focused on only week 1 and week2 as an introduction to analyzing the sequencing of incentives from one to the next
 
 ## The initial raw data can be found in the data folder Subsequent analyzed data/graphs can be done by running the relevant code (I was not able to push all of the data that 
                                                                                                                             from my results due to size limitations).
+You should first run the merge datasets code in order to get to the clean/merged datasets, before running any subsequent files. In addition, running the metrics code before doing any further analysis
+is recommended, since it helps to get relevant metrics to each incentive. Once you run the merge_datasets and progress_metrics files, you can run any other code and it should be good.
 
 ## If there are any questions, can read additional documentation/results in the LineMan google doc/folder.
