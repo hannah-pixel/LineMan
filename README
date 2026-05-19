@@ -40,8 +40,7 @@ Sequencing_analysis.ipynb: gets graphs across different metrics to analyze going
   Ttest.ipynb: gets some ttest metrics for the same sequencing analysis of going from one experiment to the next 
   W1_and_w2: focused on only week 1 and week2 as an introduction to analyzing the sequencing of incentives from one to the next
 
-## The initial raw data can be found in the data folder Subsequent analyzed data/graphs can be done by running the relevant code (I was not able to push all of the data that 
-                                                                                                                            from my results due to size limitations).
+## The initial raw data can be found in the data folder Subsequent analyzed data/graphs can be done by running the relevant code (I was not able to push all of the data that from my results due to size limitations).
 You should first run the merge datasets code in order to get to the clean/merged datasets, before running any subsequent files. In addition, running the metrics code before doing any further analysis
 is recommended, since it helps to get relevant metrics to each incentive. Once you run the merge_datasets and progress_metrics files, you can run any other code and it should be good.
 
